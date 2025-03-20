@@ -1,20 +1,9 @@
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.png"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div class="flex h-screen bg-gray-50">
+    <TheSidebar />
+    <main class="flex-1 overflow-auto">
+      <SectionTitle />
+      <RouterView />
+    </main>
+  </div>
 </template>
