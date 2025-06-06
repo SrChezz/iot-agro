@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-12 bg-white rounded-lg border border-gray-200 p-4">
+  <div class="col-span-4 bg-white rounded-lg border border-gray-200 p-4">
     <h3 class="font-semibold text-lg text-center">Status de Minerales</h3>
     <div ref="radarChart" class="w-full h-80"></div>
   </div>

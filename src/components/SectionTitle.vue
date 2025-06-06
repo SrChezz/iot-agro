@@ -2,7 +2,12 @@
   <header
     class="bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center"
   >
-    <h1 class="text-xl font-semibold">Dashboard</h1>
+  <div class="p-4 flex items-center gap-2">
+      <i-material-symbols-agriculture
+        class="w-8 h-8 rounded-md bg-green-500 flex items-center justify-center text-white p-1"
+      />
+      <span class="text-lg font-semibold">Agro & IoT</span>
+    </div>
 
     <div class="flex items-center gap-4">
       <button class="p-2 rounded-full hover:bg-gray-100">

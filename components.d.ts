@@ -30,6 +30,7 @@ declare module 'vue' {
     TheLineChart: typeof import('./src/components/TheLineChart.vue')['default']
     TheRadarChart: typeof import('./src/components/TheRadarChart.vue')['default']
     TheSidebar: typeof import('./src/components/TheSidebar.vue')['default']
+    TheTableChart: typeof import('./src/components/TheTableChart.vue')['default']
     TheWeather: typeof import('./src/components/TheWeather.vue')['default']
   }
 }

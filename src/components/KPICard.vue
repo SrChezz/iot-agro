@@ -1,14 +1,14 @@
 <template>
   <!-- Single Metric Card -->
-  <div class="bg-white rounded-lg border border-gray-200 p-4">
+  <div class="bg-white rounded-lg border border-gray-200 p-4 w-1/3">
     <div class="flex justify-between items-start">
       <div>
         <div class="flex items-center gap-1 text-gray-500 text-sm">
-          <span>Area total</span>
-          <i-lucide:info class="text-gray-500 cursor-pointer" />
+          <span>{{ title }}</span>
+          <!-- <i-lucide:info class="text-gray-500 cursor-pointer" /> -->
         </div>
-        <div class="mt-2 text-2xl font-semibold">1200 ha</div>
-        <div class="mt-1 text-sm text-green-600">+16% sobre el último mes</div>
+        <div class="mt-2 text-2xl font-semibold">{{ value }}</div>
+        <div class="mt-1 text-sm text-green-600">{{ subtitle }}</div>
       </div>
 
       <div
@@ -19,3 +19,24 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'MetricCard',
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    value: {
+      type: String,
+      required: true
+    },
+    subtitle: {
+      type: String,
+      required: false,
+      default: ''
+    }
+  }
+}
+</script>

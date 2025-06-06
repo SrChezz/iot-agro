@@ -1,29 +1,29 @@
 <template>
-  <div class="dashboard p-6 bg-gray-100 dark:bg-gray-900 min-h-screen">
-    <h1 class="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">Analytics Dashboard</h1>
+  <div class="dashboard p-6 bg-gray-100 min-h-screen">
+    <h1 class="text-2xl font-bold mb-6 text-center text-gray-800 ">Analytics Dashboard</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Gráfico de barras -->
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
-        <h2 class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-200">Revenue by Category</h2>
+      <div class="bg-white  rounded-lg shadow-md p-4">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700 ">Revenue by Category</h2>
         <v-chart class="chart" :option="barChartOption" autoresize />
       </div>
       
       <!-- Gauge -->
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
-        <h2 class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-200">Performance Score</h2>
+      <div class="bg-white  rounded-lg shadow-md p-4">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700 ">Performance Score</h2>
         <v-chart class="chart" :option="gaugeOption" autoresize />
       </div>
       
       <!-- Heatmap -->
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 col-span-1 md:col-span-2 lg:col-span-3">
-        <h2 class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-200">User Activity by Hour & Day</h2>
+      <div class="bg-white  rounded-lg shadow-md p-4 col-span-1 md:col-span-2 lg:col-span-3">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700 ">User Activity by Hour & Day</h2>
         <v-chart class="chart-wide" :option="heatmapOption" autoresize />
       </div>
       
       <!-- Pie Chart (Tu gráfico original) -->
-      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 col-span-1 md:col-span-2 lg:col-span-3">
-        <h2 class="text-lg font-semibold mb-2 text-gray-700 dark:text-gray-200">Traffic Sources</h2>
+      <div class="bg-white rounded-lg shadow-md p-4 col-span-1 md:col-span-2 lg:col-span-3">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700">Traffic Sources</h2>
         <v-chart class="chart" :option="pieChartOption" autoresize />
       </div>
     </div>
@@ -60,8 +60,7 @@ use([
   VisualMapComponent
 ]);
 
-// Configurar tema
-provide('THEME_KEY', 'dark');
+//
 
 // Datos para gráfico de barras
 const barChartOption = ref({

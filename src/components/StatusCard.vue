@@ -1,7 +1,7 @@
 <template>
   <!-- Potato Field -->
   <div
-    class="col-span-6 bg-white rounded-lg border border-gray-200 overflow-hidden"
+    class="col-span-12 bg-white rounded-lg border border-gray-200 overflow-hidden"
   >
     <div
       class="h-48 bg-cover bg-center"

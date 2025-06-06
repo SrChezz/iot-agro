@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-8 bg-white rounded-lg border border-gray-200 p-4">
+  <div class="col-span-6 bg-white rounded-lg border border-gray-200 p-4">
     <div class="flex justify-between items-center mb-4">
       <h3 class="font-semibold text-lg">Análisis Mensual</h3>
 

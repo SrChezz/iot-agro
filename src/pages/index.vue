@@ -42,12 +42,24 @@
         <KPICards />
 
         <!-- Month Yield Analysis -->
-        <TheBarChart />
-        <TheLineChart />
+        <div class="col-span-6 flex flex-col gap-6">
+          <h2 class="text-2xl font-semibold flex items-center">
+            Parcela mala <span class="text-yellow-400"> 🌾</span>
+          </h2>
+          <div class="flex gap-6">
+            <KPICard title="Registros" value="3.233K" /><KPICard
+              title="PH Promedio"
+              value="8.07"
+            /><KPICard title="RH Promedio" value="0.28" />
+          </div>
+          <!-- <TheBarChart />  -->
+          <TheLineChart jsonPath="/public/csvjsonmaladata.json"/>
+          <TheTableChart jsonPath="/public/csvjsonmaladata.json"/>
+        </div>
       </div>
 
       <!-- Crop Statud Card -->
-      <div class="grid grid-cols-12 gap-6 mt-6">
+      <div class="grid grid-cols-12 gap-6">
         <StatusCard />
       </div>
     </div>
