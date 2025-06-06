@@ -22,7 +22,7 @@
           <thead class="bg-gray-100 text-left sticky top-0 z-10">
             <tr>
               <th class="p-2 border bg-gray-100">Fecha</th>
-              <th class="p-2 border bg-gray-100">Hora</th>
+           
               <th class="p-2 border bg-gray-100">pH</th>
               <th class="p-2 border bg-gray-100">Humedad (%)</th>
               <th class="p-2 border bg-gray-100">Temperatura (°C)</th>
@@ -34,13 +34,13 @@
           <tbody>
             <tr v-for="(row, index) in limitedData" :key="index">
               <td class="p-2 border">{{ formatDateToDDMMYYYY(row.date) }}</td>
-              <td class="p-2 border">{{ row.time }}</td>
-              <td class="p-2 border">{{ row.ph }}</td>
-              <td class="p-2 border">{{ row.rh }}</td>
-              <td class="p-2 border">{{ row.temperature }}</td>
-              <td class="p-2 border">{{ row.n }}</td>
-              <td class="p-2 border">{{ row.p }}</td>
-              <td class="p-2 border">{{ row.k }}</td>
+              
+              <td class="p-2 border">{{ row.ph.toFixed(2) }}</td>
+              <td class="p-2 border">{{ row.rh.toFixed(2) }}</td>
+              <td class="p-2 border">{{ row.temperature.toFixed(2) }}</td>
+              <td class="p-2 border">{{ row.n.toFixed(2) }}</td>
+              <td class="p-2 border">{{ row.p.toFixed(2) }}</td>
+              <td class="p-2 border">{{ row.k.toFixed(2) }}</td>
             </tr>
           </tbody>
         </table>
