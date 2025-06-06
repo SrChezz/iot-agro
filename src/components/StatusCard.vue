@@ -5,7 +5,7 @@
   >
     <div
       class="h-48 bg-cover bg-center"
-      style="background-image: url('/public/parcel_bad.png')"
+      style="background-image: url('public/parcel_bad.png')"
     ></div>
 
     <div class="p-4">
