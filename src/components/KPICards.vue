@@ -11,13 +11,13 @@ import TheTableChart from './TheTableChart.vue';
     </h2>
 
     <div class="flex gap-6">
-      <KPICard title="Registros" value="3.233K" /><KPICard
+      <KPICard title="Registros" value="3233" /><KPICard
         title="PH Promedio"
         value="8.74"
       /><KPICard title="RH Promedio" value="0.29" />
     </div>
     <!-- Total Land Area -->
-    <TheLineChart jsonPath="/public/csvjsonbuenadata.json"/>
-    <TheTableChart jsonPath="/public/csvjsonbuenadata.json"/>
+    <TheLineChart jsonPath="/csvjsonbuenadata.json"/>
+    <TheTableChart jsonPath="/csvjsonbuenadata.json"/>
   </div>
 </template>

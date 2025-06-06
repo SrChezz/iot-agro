@@ -47,14 +47,14 @@
             Parcela mala <span class="text-yellow-400"> 🌾</span>
           </h2>
           <div class="flex gap-6">
-            <KPICard title="Registros" value="3.233K" /><KPICard
+            <KPICard title="Registros" value="3233" /><KPICard
               title="PH Promedio"
               value="8.07"
             /><KPICard title="RH Promedio" value="0.28" />
           </div>
           <!-- <TheBarChart />  -->
-          <TheLineChart jsonPath="/public/csvjsonmaladata.json"/>
-          <TheTableChart jsonPath="/public/csvjsonmaladata.json"/>
+          <TheLineChart jsonPath="/csvjsonmaladata.json"/>
+          <TheTableChart jsonPath="/csvjsonmaladata.json"/>
         </div>
       </div>
 
